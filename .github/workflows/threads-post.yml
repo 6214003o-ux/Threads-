@@ -1,9 +1,5 @@
 name: Threads Post
 on:
-  schedule:
-    - cron: "0 22 * * *"   # JST 7:00 = UTC 22:00（前日）
-    - cron: "0 3 * * *"    # JST 12:00 = UTC 3:00
-    - cron: "0 11 * * *"   # JST 20:00 = UTC 11:00
   workflow_dispatch:
 concurrency:
   group: threads-post
